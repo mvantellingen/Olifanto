@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Olifanto' target in the 'Olifanto' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

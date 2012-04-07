@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E81EA2CD1530E48F00214734 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81EA2CC1530E48F00214734 /* Cocoa.framework */; };
+		E81EA2EB1530E48F00214734 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81EA2EA1530E48F00214734 /* SenTestingKit.framework */; };
+		E81EA2EC1530E48F00214734 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81EA2CC1530E48F00214734 /* Cocoa.framework */; };
+		E82DE6CE1530E70300C759DA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6C71530E70300C759DA /* Credits.rtf */; };
+		E82DE6CF1530E70300C759DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6C91530E70300C759DA /* InfoPlist.strings */; };
+		E82DE6D11530E70300C759DA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6CD1530E70300C759DA /* Info.plist */; };
+		E82DE6E11530E7F800C759DA /* OLWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6D31530E7F700C759DA /* OLWindowController.m */; };
+		E82DE6E21530E7F800C759DA /* OLTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6D51530E7F700C759DA /* OLTableController.m */; };
+		E82DE6E31530E7F800C759DA /* OLServerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6D71530E7F700C759DA /* OLServerDataSource.m */; };
+		E82DE6E41530E7F800C759DA /* OLPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6D91530E7F700C759DA /* OLPreferencesController.m */; };
+		E82DE6E51530E7F800C759DA /* OLMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6DB1530E7F700C759DA /* OLMainController.m */; };
+		E82DE6E61530E7F800C759DA /* OLDatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6DD1530E7F800C759DA /* OLDatabaseController.m */; };
+		E82DE6E71530E7F800C759DA /* OLConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6DF1530E7F800C759DA /* OLConnectionController.m */; };
+		E82DE6EB1530E81E00C759DA /* OLSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E82DE6EA1530E81E00C759DA /* OLSettings.m */; };
+		E82DE6FC1530E86400C759DA /* ConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6F71530E86400C759DA /* ConnectionView.xib */; };
+		E82DE6FD1530E86400C759DA /* DatabaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6F81530E86400C759DA /* DatabaseView.xib */; };
+		E82DE6FE1530E86400C759DA /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6F91530E86400C759DA /* MainView.xib */; };
+		E82DE7001530E86400C759DA /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6FB1530E86400C759DA /* Preferences.xib */; };
+		E82DE7021530E8D300C759DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE7011530E8D300C759DA /* MainMenu.xib */; };
+		E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B5B2171530EAEB00C14A87 /* MainWindow.xib */; };
+		E8E65F711530F678004F65F9 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */; };
+		E8E65F721530F67B004F65F9 /* PGCkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B3191530F33600C14A87 /* PGCkit.framework */; };
+		E8E680C81530E5E0007A7F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E680C31530E5E0007A7F6B /* main.m */; };
+		E8E680C91530E5E0007A7F6B /* OLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E680C51530E5E0007A7F6B /* OLAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E81EA2ED1530E48F00214734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81EA2BF1530E48F00214734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81EA2C71530E48F00214734;
+			remoteInfo = Olifanto;
+		};
+		E8B5B30C1530F32E00C14A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53DF68FD067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
+		};
+		E8B5B30E1530F32E00C14A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BD4395A1185147D00DB4AC3;
+			remoteInfo = PSMTabBarControlDemo;
+		};
+		E8B5B3181530F33600C14A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E8079A041472D5BC00A27C5B;
+			remoteInfo = PGCkit;
+		};
+		E8B5B31A1530F33600C14A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E8079A1C1472D5BC00A27C5B;
+			remoteInfo = Tests;
+		};
+		E8B5B31C1530F34500C14A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
+		};
+		E8B5B31E1530F34900C14A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E8079A031472D5BB00A27C5B;
+			remoteInfo = PGCkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E81EA2C81530E48F00214734 /* Olifanto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olifanto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81EA2CC1530E48F00214734 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E81EA2CF1530E48F00214734 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E81EA2D01530E48F00214734 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E81EA2D11530E48F00214734 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E81EA2E91530E48F00214734 /* OlifantoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlifantoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81EA2EA1530E48F00214734 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E82DE6C81530E70300C759DA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E82DE6CA1530E70300C759DA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E82DE6CD1530E70300C759DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E82DE6D21530E7F700C759DA /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		E82DE6D31530E7F700C759DA /* OLWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLWindowController.m; sourceTree = "<group>"; };
+		E82DE6D41530E7F700C759DA /* OLWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLWindowController.h; sourceTree = "<group>"; };
+		E82DE6D51530E7F700C759DA /* OLTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTableController.m; sourceTree = "<group>"; };
+		E82DE6D61530E7F700C759DA /* OLTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTableController.h; sourceTree = "<group>"; };
+		E82DE6D71530E7F700C759DA /* OLServerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLServerDataSource.m; sourceTree = "<group>"; };
+		E82DE6D81530E7F700C759DA /* OLServerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLServerDataSource.h; sourceTree = "<group>"; };
+		E82DE6D91530E7F700C759DA /* OLPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLPreferencesController.m; sourceTree = "<group>"; };
+		E82DE6DA1530E7F700C759DA /* OLPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLPreferencesController.h; sourceTree = "<group>"; };
+		E82DE6DB1530E7F700C759DA /* OLMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLMainController.m; sourceTree = "<group>"; };
+		E82DE6DC1530E7F700C759DA /* OLMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLMainController.h; sourceTree = "<group>"; };
+		E82DE6DD1530E7F800C759DA /* OLDatabaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLDatabaseController.m; sourceTree = "<group>"; };
+		E82DE6DE1530E7F800C759DA /* OLDatabaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLDatabaseController.h; sourceTree = "<group>"; };
+		E82DE6DF1530E7F800C759DA /* OLConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLConnectionController.m; sourceTree = "<group>"; };
+		E82DE6E01530E7F800C759DA /* OLConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLConnectionController.h; sourceTree = "<group>"; };
+		E82DE6E91530E81E00C759DA /* OLSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLSettings.h; sourceTree = "<group>"; };
+		E82DE6EA1530E81E00C759DA /* OLSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLSettings.m; sourceTree = "<group>"; };
+		E82DE6F71530E86400C759DA /* ConnectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionView.xib; sourceTree = "<group>"; };
+		E82DE6F81530E86400C759DA /* DatabaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatabaseView.xib; sourceTree = "<group>"; };
+		E82DE6F91530E86400C759DA /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		E82DE6FB1530E86400C759DA /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		E82DE7011530E8D300C759DA /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		E8B5B2171530EAEB00C14A87 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "../../Olifant-old/Resources/MainWindow.xib"; sourceTree = "<group>"; };
+		E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = External/PSMTabBarControl/Source/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
+		E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PGCkit.xcodeproj; path = External/PGCkit/PGCkit.xcodeproj; sourceTree = "<group>"; };
+		E8E680C31530E5E0007A7F6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E680C41530E5E0007A7F6B /* OLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLAppDelegate.h; sourceTree = "<group>"; };
+		E8E680C51530E5E0007A7F6B /* OLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E81EA2C51530E48F00214734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E65F721530F67B004F65F9 /* PGCkit.framework in Frameworks */,
+				E8E65F711530F678004F65F9 /* PSMTabBarControl.framework in Frameworks */,
+				E81EA2CD1530E48F00214734 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EA2E51530E48F00214734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81EA2EB1530E48F00214734 /* SenTestingKit.framework in Frameworks */,
+				E81EA2EC1530E48F00214734 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E81EA2BD1530E48F00214734 = {
+			isa = PBXGroup;
+			children = (
+				E8B5B3011530F31F00C14A87 /* External */,
+				E82DE6F61530E86400C759DA /* Interfaces */,
+				E82DE6C61530E70300C759DA /* Resources */,
+				E8E680C21530E5E0007A7F6B /* Source */,
+				E81EA2CB1530E48F00214734 /* Frameworks */,
+				E81EA2C91530E48F00214734 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E81EA2C91530E48F00214734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E81EA2C81530E48F00214734 /* Olifanto.app */,
+				E81EA2E91530E48F00214734 /* OlifantoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E81EA2CB1530E48F00214734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E81EA2CC1530E48F00214734 /* Cocoa.framework */,
+				E81EA2EA1530E48F00214734 /* SenTestingKit.framework */,
+				E81EA2CE1530E48F00214734 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E81EA2CE1530E48F00214734 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E81EA2CF1530E48F00214734 /* AppKit.framework */,
+				E81EA2D01530E48F00214734 /* CoreData.framework */,
+				E81EA2D11530E48F00214734 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E82DE6C61530E70300C759DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E82DE6C71530E70300C759DA /* Credits.rtf */,
+				E82DE6C91530E70300C759DA /* InfoPlist.strings */,
+				E82DE6CD1530E70300C759DA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E82DE6E81530E81E00C759DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E82DE6E91530E81E00C759DA /* OLSettings.h */,
+				E82DE6EA1530E81E00C759DA /* OLSettings.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E82DE6F61530E86400C759DA /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E82DE7011530E8D300C759DA /* MainMenu.xib */,
+				E82DE6F71530E86400C759DA /* ConnectionView.xib */,
+				E8B5B2171530EAEB00C14A87 /* MainWindow.xib */,
+				E82DE6F81530E86400C759DA /* DatabaseView.xib */,
+				E82DE6F91530E86400C759DA /* MainView.xib */,
+				E82DE6FB1530E86400C759DA /* Preferences.xib */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		E8B5B3011530F31F00C14A87 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */,
+				E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		E8B5B3031530F32E00C14A87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */,
+				E8B5B30F1530F32E00C14A87 /* PSMTabBarControlDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B5B3111530F33500C14A87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8B5B3191530F33600C14A87 /* PGCkit.framework */,
+				E8B5B31B1530F33600C14A87 /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8E680C21530E5E0007A7F6B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E82DE6E81530E81E00C759DA /* Models */,
+				E82DE6D21530E7F700C759DA /* Prefix.pch */,
+				E82DE6D31530E7F700C759DA /* OLWindowController.m */,
+				E82DE6D41530E7F700C759DA /* OLWindowController.h */,
+				E82DE6D51530E7F700C759DA /* OLTableController.m */,
+				E82DE6D61530E7F700C759DA /* OLTableController.h */,
+				E82DE6D71530E7F700C759DA /* OLServerDataSource.m */,
+				E82DE6D81530E7F700C759DA /* OLServerDataSource.h */,
+				E82DE6D91530E7F700C759DA /* OLPreferencesController.m */,
+				E82DE6DA1530E7F700C759DA /* OLPreferencesController.h */,
+				E82DE6DB1530E7F700C759DA /* OLMainController.m */,
+				E82DE6DC1530E7F700C759DA /* OLMainController.h */,
+				E82DE6DD1530E7F800C759DA /* OLDatabaseController.m */,
+				E82DE6DE1530E7F800C759DA /* OLDatabaseController.h */,
+				E82DE6DF1530E7F800C759DA /* OLConnectionController.m */,
+				E82DE6E01530E7F800C759DA /* OLConnectionController.h */,
+				E8E680C31530E5E0007A7F6B /* main.m */,
+				E8E680C41530E5E0007A7F6B /* OLAppDelegate.h */,
+				E8E680C51530E5E0007A7F6B /* OLAppDelegate.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E81EA2C71530E48F00214734 /* Olifanto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81EA2FA1530E49000214734 /* Build configuration list for PBXNativeTarget "Olifanto" */;
+			buildPhases = (
+				E81EA2C41530E48F00214734 /* Sources */,
+				E81EA2C51530E48F00214734 /* Frameworks */,
+				E81EA2C61530E48F00214734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B5B31F1530F34900C14A87 /* PBXTargetDependency */,
+				E8B5B31D1530F34500C14A87 /* PBXTargetDependency */,
+			);
+			name = Olifanto;
+			productName = Olifanto;
+			productReference = E81EA2C81530E48F00214734 /* Olifanto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E81EA2E81530E48F00214734 /* OlifantoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81EA2FD1530E49000214734 /* Build configuration list for PBXNativeTarget "OlifantoTests" */;
+			buildPhases = (
+				E81EA2E41530E48F00214734 /* Sources */,
+				E81EA2E51530E48F00214734 /* Frameworks */,
+				E81EA2E61530E48F00214734 /* Resources */,
+				E81EA2E71530E48F00214734 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E81EA2EE1530E48F00214734 /* PBXTargetDependency */,
+			);
+			name = OlifantoTests;
+			productName = OlifantoTests;
+			productReference = E81EA2E91530E48F00214734 /* OlifantoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E81EA2BF1530E48F00214734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OL;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = E81EA2C21530E48F00214734 /* Build configuration list for PBXProject "Olifanto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+				Japanese,
+			);
+			mainGroup = E81EA2BD1530E48F00214734;
+			productRefGroup = E81EA2C91530E48F00214734 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E8B5B3111530F33500C14A87 /* Products */;
+					ProjectRef = E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */;
+				},
+				{
+					ProductGroup = E8B5B3031530F32E00C14A87 /* Products */;
+					ProjectRef = E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E81EA2C71530E48F00214734 /* Olifanto */,
+				E81EA2E81530E48F00214734 /* OlifantoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PSMTabBarControl.framework;
+			remoteRef = E8B5B30C1530F32E00C14A87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E8B5B30F1530F32E00C14A87 /* PSMTabBarControlDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PSMTabBarControlDemo.app;
+			remoteRef = E8B5B30E1530F32E00C14A87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E8B5B3191530F33600C14A87 /* PGCkit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PGCkit.framework;
+			remoteRef = E8B5B3181530F33600C14A87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E8B5B31B1530F33600C14A87 /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = E8B5B31A1530F33600C14A87 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E81EA2C61530E48F00214734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82DE6CE1530E70300C759DA /* Credits.rtf in Resources */,
+				E82DE6CF1530E70300C759DA /* InfoPlist.strings in Resources */,
+				E82DE6D11530E70300C759DA /* Info.plist in Resources */,
+				E82DE6FC1530E86400C759DA /* ConnectionView.xib in Resources */,
+				E82DE6FD1530E86400C759DA /* DatabaseView.xib in Resources */,
+				E82DE6FE1530E86400C759DA /* MainView.xib in Resources */,
+				E82DE7001530E86400C759DA /* Preferences.xib in Resources */,
+				E82DE7021530E8D300C759DA /* MainMenu.xib in Resources */,
+				E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EA2E61530E48F00214734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E81EA2E71530E48F00214734 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E81EA2C41530E48F00214734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E680C81530E5E0007A7F6B /* main.m in Sources */,
+				E8E680C91530E5E0007A7F6B /* OLAppDelegate.m in Sources */,
+				E82DE6E11530E7F800C759DA /* OLWindowController.m in Sources */,
+				E82DE6E21530E7F800C759DA /* OLTableController.m in Sources */,
+				E82DE6E31530E7F800C759DA /* OLServerDataSource.m in Sources */,
+				E82DE6E41530E7F800C759DA /* OLPreferencesController.m in Sources */,
+				E82DE6E51530E7F800C759DA /* OLMainController.m in Sources */,
+				E82DE6E61530E7F800C759DA /* OLDatabaseController.m in Sources */,
+				E82DE6E71530E7F800C759DA /* OLConnectionController.m in Sources */,
+				E82DE6EB1530E81E00C759DA /* OLSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81EA2E41530E48F00214734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E81EA2EE1530E48F00214734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81EA2C71530E48F00214734 /* Olifanto */;
+			targetProxy = E81EA2ED1530E48F00214734 /* PBXContainerItemProxy */;
+		};
+		E8B5B31D1530F34500C14A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PSMTabBarControlFramework;
+			targetProxy = E8B5B31C1530F34500C14A87 /* PBXContainerItemProxy */;
+		};
+		E8B5B31F1530F34900C14A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PGCkit;
+			targetProxy = E8B5B31E1530F34900C14A87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E82DE6C71530E70300C759DA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E82DE6C81530E70300C759DA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E82DE6C91530E70300C759DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E82DE6CA1530E70300C759DA /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E81EA2F81530E49000214734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "Frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/PSMTabBarControl/Source";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E81EA2F91530E49000214734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "Frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/PSMTabBarControl/Source";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E81EA2FB1530E49000214734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/PSMTabBarControl/Source";
+				INFOPLIST_FILE = Resources/Info.plist;
+				OTHER_LDFLAGS = "-lpq";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E81EA2FC1530E49000214734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/PSMTabBarControl/Source";
+				INFOPLIST_FILE = Resources/Info.plist;
+				OTHER_LDFLAGS = "-lpq";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E81EA2FE1530E49000214734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Olifanto.app/Contents/MacOS/Olifanto";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Olifanto/Olifanto-Prefix.pch";
+				INFOPLIST_FILE = "OlifantoTests/OlifantoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E81EA2FF1530E49000214734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Olifanto.app/Contents/MacOS/Olifanto";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Olifanto/Olifanto-Prefix.pch";
+				INFOPLIST_FILE = "OlifantoTests/OlifantoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E81EA2C21530E48F00214734 /* Build configuration list for PBXProject "Olifanto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81EA2F81530E49000214734 /* Debug */,
+				E81EA2F91530E49000214734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81EA2FA1530E49000214734 /* Build configuration list for PBXNativeTarget "Olifanto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81EA2FB1530E49000214734 /* Debug */,
+				E81EA2FC1530E49000214734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81EA2FD1530E49000214734 /* Build configuration list for PBXNativeTarget "OlifantoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81EA2FE1530E49000214734 /* Debug */,
+				E81EA2FF1530E49000214734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E81EA2BF1530E48F00214734 /* Project object */;
+}

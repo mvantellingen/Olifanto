@@ -1,0 +1,6 @@
+[submodule "External/PSMTabBarControl"]
+	path = External/PSMTabBarControl
+	url = https://github.com/dorianj/PSMTabBarControl.git
+[submodule "External/PGCkit"]
+	path = External/PGCkit
+	url = git@github.com:mvantellingen/PGCkit.git
