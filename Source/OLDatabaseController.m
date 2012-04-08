@@ -11,6 +11,8 @@
 
 @implementation OLDatabaseController
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -24,7 +26,7 @@
 
 - (void) awakeFromNib
 {
-    NSLog(@"Hello from database view");
+    [tablesView setDelegate:self];
 }
 
 - (void) setConnection:(OLConnection *)newConnection
@@ -38,11 +40,16 @@
     return [connection getDatabases];
 }
 
+- (NSArray *)getTables
+{
+    return [connection getTables];
+}
+
 - (BOOL) openDatabase:(NSString *)database
 {
     NSArray *tables;
     [connection selectDatabase: database];
-    tables = [connection getTables];
-    NSLog(@"Tables: %@", tables);
+    [tablesView update];
+    return true;
 }
 @end

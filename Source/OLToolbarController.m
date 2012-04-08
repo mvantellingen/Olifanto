@@ -56,8 +56,6 @@
         [menuItem setTag: 1];
         [[databaseSelector menu] addItem:menuItem];
     }
-    
-    NSLog(@"Databases: %@", databases);
 }
 
 - (IBAction) openQueryView:(id)sender
@@ -80,7 +78,6 @@
 
 - (BOOL)validateToolbarItem:(NSToolbarItem *)toolbarItem
 {
-    NSLog(@"Validating menu item");
     return (delegate != nil);
 }
 @end
