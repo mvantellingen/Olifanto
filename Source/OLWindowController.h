@@ -7,14 +7,19 @@
 //
 
 #import <AppKit/AppKit.h>
-#import <PSMTabBarControl.h>
+
+@class PSMTabBarControl;
 
 @interface OLWindowController : NSWindowController
 {
     IBOutlet PSMTabBarControl *tabBar;
     IBOutlet NSTabView *tabView;
+    
+    NSView *activeTabView;
 }
 
 - (void)awakeFromNib;
 - (IBAction)addTabPanel:(id)sender;
+- (IBAction)closeTab:(id)sender;
+- (IBAction)openConnection:(id)connection;
 @end

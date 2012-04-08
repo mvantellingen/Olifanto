@@ -8,7 +8,10 @@
 
 #import "OLWindowController.h"
 #import "OLMainController.h"
-
+#import "OLConnectionController.h"
+#import "OLDatabaseController.h"
+#import <PSMTabBarControl/PSMTabBarControl.h>
+#import <PSMTabBarControl/PSMTabStyle.h>
 
 @implementation OLWindowController
 
@@ -33,14 +36,49 @@
     [tabBar setShowAddTabButton:YES];
     [tabBar setTearOffStyle:PSMTabBarTearOffAlphaWindow];    
     [tabBar setSizeCellsToFit:NO];
+    
+    // Hook up add tab button
+    [[tabBar addTabButton] setTarget:self];
+	[[tabBar addTabButton] setAction:@selector(addTabPanel:)];
+    
 }
+
+
+
+- (BOOL)tabView:(NSTabView*)aTabView shouldDragTabViewItem:(NSTabViewItem *)tabViewItem 
+     fromTabBar:(PSMTabBarControl *)tabBarControl 
+{
+	return YES;
+}
+
+- (BOOL)tabView:(NSTabView*)aTabView shouldDropTabViewItem:(NSTabViewItem *)tabViewItem 
+       inTabBar:(PSMTabBarControl *)tabBarControl 
+{
+	return YES;
+}
+
+
+- (IBAction)closeTab:(id)sender
+{
+	if ([tabView numberOfTabViewItems] > 1) {
+		[tabView removeTabViewItem:[tabView selectedTabViewItem]];
+	} 
+	else {
+		[[self window] performClose:self];
+	}
+}
+
 
 - (IBAction)addTabPanel:(id)sender
 {
     printf("addTabPanel\n");
     
-    OLMainController *newController = [[OLMainController alloc] 
-                                       initWithNibName:@"MainView" bundle:nil];
+    OLConnectionController *newController =
+        [[OLConnectionController alloc] 
+         initWithNibName:@"ConnectionView" 
+         bundle:nil];
+    
+    [newController setDelegate:self];
 
     NSTabViewItem *newTabItem = [[NSTabViewItem alloc] 
                                  initWithIdentifier:(id)newController];
@@ -48,9 +86,26 @@
     [newTabItem setView:[newController view]];
     [tabView addTabViewItem:newTabItem];
     [tabView selectTabViewItem:newTabItem];
-    
-    [newController showConnectionView];
+        
+}
 
+- (IBAction)openConnection:(id)connection
+{
+    NSLog(@"Opening the connection ");
+    
+    NSTabViewItem *tabItem = [tabView selectedTabViewItem];
+    NSView *tabItemView = [tabItem view];
+
+    OLDatabaseController * dbController = 
+        [[OLDatabaseController alloc]
+         initWithNibName:@"DatabaseView" bundle:nil];    
+    [dbController setConnection: connection];
+    
+    [tabItem setLabel: [connection name]];
+    [tabItem setView:[dbController view]];
+    
+    // Deallocate the old view (connectionView)
+    [tabItemView dealloc];
 }
 
 @end

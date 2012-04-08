@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "OLConnectionSource.h"
+#import "OLConnection.h"
 
 @interface OLConnectionController : NSViewController
 {
@@ -17,11 +19,16 @@
     IBOutlet NSTextField *username;
     IBOutlet NSTextField *password;
 
+    IBOutlet OLConnectionSource *connectionSource;
 
 }
 
-- (void)setDelegate:(id)delegate;
+@property (nonatomic, assign) id delegate;
+
 
 - (IBAction)save:(id)sender;
 - (IBAction)connect:(id)sender;
+
+
+- (OLConnection *)_createConnectionInstance;
 @end

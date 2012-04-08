@@ -8,8 +8,11 @@
 
 #import "OLConnectionController.h"
 #import "OLSettings.h"
+#import "OLConnection.h"
 
 @implementation OLConnectionController
+
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,13 +24,41 @@
     return self;
 }
 
-- (void)setDelegate:(id)theDelegate
+- (void)awakeFromNib
 {
-    delegate = theDelegate;
+    [connectionSource setDelegate:self];
 }
 
 
 - (IBAction)save:(id)sender
+{
+    OLConnection *connection = [self _createConnectionInstance];
+    [OLSettings addConnection: connection];
+}
+
+- (void)selectConnection:(OLConnection *)connection 
+{
+    [name setStringValue: connection.name];
+    [host setStringValue: connection.hostname];
+    [username setStringValue: connection.username];
+    [password setStringValue: connection.password];
+}
+
+- (void)activateConnection:(OLConnection *)connection 
+{
+    [delegate openConnection:connection];
+}
+
+- (IBAction)connect:(id)sender
+{
+    OLConnection *connection = [self _createConnectionInstance];
+    [delegate openConnection: connection];
+}
+
+/**
+ * Create a connection instance based on the values entered on the form
+ */
+- (OLConnection *)_createConnectionInstance
 {
     if ([[host stringValue] length] == 0) {
         NSAlert *alert = [[NSAlert alloc] init];
@@ -36,19 +67,13 @@
         return;
     }
     
-    NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:
-                          [name stringValue], @"name", 
-                          [host stringValue], @"host", 
-                          [username stringValue], @"username", 
-                          [password stringValue], @"password", 
-                          nil];
-    [OLSettings addServer: data];
-}
-
-- (IBAction)connect:(id)sender
-{
-    NSLog(@"Connect to db");
-   // [delegate showDatabaseView];
+    OLConnection *connection = [[OLConnection alloc] init];    
+    connection.name = [name stringValue];
+    connection.hostname = [host stringValue];
+    connection.username = [username stringValue];
+    connection.password = [password stringValue]; 
+    
+    return connection;
 }
 
 @end

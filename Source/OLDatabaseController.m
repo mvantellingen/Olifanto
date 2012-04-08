@@ -7,6 +7,7 @@
 //
 
 #import "OLDatabaseController.h"
+#import "OLConnection.h"
 
 @implementation OLDatabaseController
 
@@ -26,4 +27,8 @@
     NSLog(@"Hello from database view");
 }
 
+- (void) setConnection:(OLConnection *)connection
+{
+
+}
 @end
