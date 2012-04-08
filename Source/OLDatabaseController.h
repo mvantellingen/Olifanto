@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "OLConnection.h"
 
 @interface OLDatabaseController : NSViewController
-
+{
+    OLConnection *connection;
+}
 - (void) awakeFromNib;
 
 @end

@@ -57,6 +57,19 @@
 	return YES;
 }
 
+- (void)tabView:(NSTabView *)aTabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
+
+    NSTabViewItem *tabItem = [tabView selectedTabViewItem];
+    NSView *tabItemView = [tabItem view];
+    
+    if ([[tabItem identifier] isKindOfClass:[OLDatabaseController class]]) {
+        [toolbarController setDelegate:[tabItem identifier]];        
+    }
+    else {
+        [toolbarController setDelegate:nil];        
+    }
+
+}
 
 - (IBAction)closeTab:(id)sender
 {
@@ -86,6 +99,8 @@
     [newTabItem setView:[newController view]];
     [tabView addTabViewItem:newTabItem];
     [tabView selectTabViewItem:newTabItem];
+    
+    NSLog(@"Tab identifier: %@", [newTabItem identifier]);
         
 }
 
@@ -103,7 +118,9 @@
     
     [tabItem setLabel: [connection name]];
     [tabItem setView:[dbController view]];
-    
+    [tabItem setIdentifier:dbController];
+    [toolbarController setDelegate:dbController];
+
     // Deallocate the old view (connectionView)
     [tabItemView dealloc];
 }

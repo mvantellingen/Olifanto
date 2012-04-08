@@ -7,6 +7,7 @@
 //
 
 #import <AppKit/AppKit.h>
+#import "OLToolbarController.h"
 
 @class PSMTabBarControl;
 
@@ -14,7 +15,8 @@
 {
     IBOutlet PSMTabBarControl *tabBar;
     IBOutlet NSTabView *tabView;
-    
+    IBOutlet NSToolbar *toolBar;
+    IBOutlet OLToolbarController *toolbarController;
     NSView *activeTabView;
 }
 

@@ -7,8 +7,12 @@
 //
 
 #import "OLConnection.h"
+#import <PGCconnection.h>
+#import <PGCcursor.h>
 
 @implementation OLConnection
+
+@synthesize conn;
 @synthesize name;
 @synthesize hostname;
 @synthesize username;
@@ -38,4 +42,91 @@
     
     return data;
 }
+
+- (BOOL) connect
+{
+    return false;
+}
+
+- (BOOL) selectDatabase: (NSString *)database
+{
+    PGCconnection * newConn = [self _connectWithDatabase: database];
+    if (newConn == nil) {
+        return false;
+    }
+
+    // Close the old connection if available
+    if (conn) {
+        //[conn close];
+    }
+    conn = newConn;
+    
+    return true;
+}
+
+- (NSArray *) getTables
+{
+    PGCcursor *cursor;
+    
+    
+    NSError *error = nil;
+    cursor = [conn cursor];
+    [cursor execute:@"SELECT table_name FROM information_schema.tables " 
+                     "WHERE table_schema = 'public' ORDER BY table_name"
+              error:&error];  
+    
+    NSArray *rows = [cursor fetchAll];
+    NSArray *row;
+    NSMutableArray *tables = [NSMutableArray array];
+    
+    NSEnumerator *e = [rows objectEnumerator];
+    while (row = [e nextObject]) {
+        [tables addObject:[row objectAtIndex:0]];
+    }
+    
+    return tables;
+}
+
+
+- (NSArray *) getDatabases
+{
+    BOOL closeConnection = false;
+    PGCcursor *cursor;
+    
+    if (conn == nil) {
+        conn = [self _connectWithDatabase:@"postgres"];
+        closeConnection = true;
+    }
+    
+    NSError *error = nil;
+    cursor = [conn cursor];
+    [cursor execute:@"SELECT datname FROM pg_database ORDER BY datname" 
+              error:&error];    
+    NSArray *rows = [cursor fetchAll];
+    NSArray *row;
+    NSMutableArray *databases = [NSMutableArray array];
+    
+    NSEnumerator *e = [rows objectEnumerator];
+    while (row = [e nextObject]) {
+        [databases addObject:[row objectAtIndex:0]];
+    }
+    
+    if (closeConnection) {
+        [conn close];
+    }
+    
+    return databases;
+}
+
+- (PGCconnection *) _connectWithDatabase:(NSString *)theDatabase
+{
+    NSError *error = nil;
+    
+    PGCconnection * newConn = [[PGCconnection alloc] init];
+    [newConn connect: hostname port: 5432 user: username
+            password: nil database: theDatabase error:&error];     
+    
+    return newConn;
+}
+
 @end

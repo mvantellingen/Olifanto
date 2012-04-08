@@ -15,7 +15,7 @@
 {
     self = [super init];
     if (self) {
-        list = [OLSettings getServers];
+        list = [OLSettings getConnections];
     }
     NSLog(@"Initialized OLServerDataSource");
     return self;

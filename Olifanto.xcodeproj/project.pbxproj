@@ -25,11 +25,14 @@
 		E82DE6FD1530E86400C759DA /* DatabaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6F81530E86400C759DA /* DatabaseView.xib */; };
 		E82DE7001530E86400C759DA /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6FB1530E86400C759DA /* Preferences.xib */; };
 		E82DE7021530E8D300C759DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE7011530E8D300C759DA /* MainMenu.xib */; };
+		E88C6E9C15322BC0003D9E05 /* OLTableOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */; };
 		E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B5B2171530EAEB00C14A87 /* MainWindow.xib */; };
 		E8C2CFA015317A45000DEDE8 /* OLConnectionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C2CF9F15317A45000DEDE8 /* OLConnectionSource.m */; };
 		E8C2CFB2153185B9000DEDE8 /* PSMTabBarControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */; };
 		E8C2CFB31531860A000DEDE8 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */; };
 		E8C2CFC615319D96000DEDE8 /* OLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C2CFC515319D96000DEDE8 /* OLConnection.m */; };
+		E8C2CFC71531AFAD000DEDE8 /* PGCkit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E8B5B3191530F33600C14A87 /* PGCkit.framework */; };
+		E8C2CFCA1531BE11000DEDE8 /* OLToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C2CFC91531BE10000DEDE8 /* OLToolbarController.m */; };
 		E8E65F721530F67B004F65F9 /* PGCkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B3191530F33600C14A87 /* PGCkit.framework */; };
 		E8E680C81530E5E0007A7F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E680C31530E5E0007A7F6B /* main.m */; };
 		E8E680C91530E5E0007A7F6B /* OLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E680C51530E5E0007A7F6B /* OLAppDelegate.m */; };
@@ -71,13 +74,6 @@
 			remoteGlobalIDString = E8079A1C1472D5BC00A27C5B;
 			remoteInfo = Tests;
 		};
-		E8B5B31E1530F34900C14A87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E8079A031472D5BB00A27C5B;
-			remoteInfo = PGCkit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E8C2CFC71531AFAD000DEDE8 /* PGCkit.framework in CopyFiles */,
 				E8C2CFB2153185B9000DEDE8 /* PSMTabBarControl.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +122,8 @@
 		E82DE6F81530E86400C759DA /* DatabaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatabaseView.xib; sourceTree = "<group>"; };
 		E82DE6FB1530E86400C759DA /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		E82DE7011530E8D300C759DA /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		E88C6E9A15322BBF003D9E05 /* OLTableOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTableOutlineView.h; sourceTree = "<group>"; };
+		E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTableOutlineView.m; sourceTree = "<group>"; };
 		E8B5B2171530EAEB00C14A87 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "../../Olifant-old/Resources/MainWindow.xib"; sourceTree = "<group>"; };
 		E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = External/PSMTabBarControl/Source/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
 		E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PGCkit.xcodeproj; path = External/PGCkit/PGCkit.xcodeproj; sourceTree = "<group>"; };
@@ -132,6 +131,8 @@
 		E8C2CF9F15317A45000DEDE8 /* OLConnectionSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLConnectionSource.m; sourceTree = "<group>"; };
 		E8C2CFC415319D95000DEDE8 /* OLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLConnection.h; sourceTree = "<group>"; };
 		E8C2CFC515319D96000DEDE8 /* OLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLConnection.m; sourceTree = "<group>"; };
+		E8C2CFC81531BE10000DEDE8 /* OLToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLToolbarController.h; sourceTree = "<group>"; };
+		E8C2CFC91531BE10000DEDE8 /* OLToolbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLToolbarController.m; sourceTree = "<group>"; };
 		E8E680C31530E5E0007A7F6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8E680C41530E5E0007A7F6B /* OLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLAppDelegate.h; sourceTree = "<group>"; };
 		E8E680C51530E5E0007A7F6B /* OLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLAppDelegate.m; sourceTree = "<group>"; };
@@ -285,6 +286,10 @@
 				E8C2CF9F15317A45000DEDE8 /* OLConnectionSource.m */,
 				E8C2CFC415319D95000DEDE8 /* OLConnection.h */,
 				E8C2CFC515319D96000DEDE8 /* OLConnection.m */,
+				E8C2CFC81531BE10000DEDE8 /* OLToolbarController.h */,
+				E8C2CFC91531BE10000DEDE8 /* OLToolbarController.m */,
+				E88C6E9A15322BBF003D9E05 /* OLTableOutlineView.h */,
+				E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -304,7 +309,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E8B5B31F1530F34900C14A87 /* PBXTargetDependency */,
 			);
 			name = Olifanto;
 			productName = Olifanto;
@@ -458,6 +462,8 @@
 				E82DE6EB1530E81E00C759DA /* OLSettings.m in Sources */,
 				E8C2CFA015317A45000DEDE8 /* OLConnectionSource.m in Sources */,
 				E8C2CFC615319D96000DEDE8 /* OLConnection.m in Sources */,
+				E8C2CFCA1531BE11000DEDE8 /* OLToolbarController.m in Sources */,
+				E88C6E9C15322BC0003D9E05 /* OLTableOutlineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,11 +481,6 @@
 			isa = PBXTargetDependency;
 			target = E81EA2C71530E48F00214734 /* Olifanto */;
 			targetProxy = E81EA2ED1530E48F00214734 /* PBXContainerItemProxy */;
-		};
-		E8B5B31F1530F34900C14A87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PGCkit;
-			targetProxy = E8B5B31E1530F34900C14A87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -562,7 +563,10 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
-				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/PSMTabBarControl/Source";
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/External/PSMTabBarControl/Source",
+					"$(SOURCE_ROOT)/External/PGCkit/Source",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				OTHER_LDFLAGS = "-lpq";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -576,7 +580,10 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
-				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/External/PSMTabBarControl/Source";
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/External/PSMTabBarControl/Source",
+					"$(SOURCE_ROOT)/External/PGCkit/Source",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				OTHER_LDFLAGS = "-lpq";
 				PRODUCT_NAME = "$(TARGET_NAME)";

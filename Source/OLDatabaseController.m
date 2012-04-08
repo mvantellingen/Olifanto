@@ -27,8 +27,22 @@
     NSLog(@"Hello from database view");
 }
 
-- (void) setConnection:(OLConnection *)connection
+- (void) setConnection:(OLConnection *)newConnection
 {
+    connection = newConnection;
+    [connection connect];
+}
 
+- (NSArray *)getDatabases
+{
+    return [connection getDatabases];
+}
+
+- (BOOL) openDatabase:(NSString *)database
+{
+    NSArray *tables;
+    [connection selectDatabase: database];
+    tables = [connection getTables];
+    NSLog(@"Tables: %@", tables);
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <PGCconnection.h>
 
 @interface OLConnection : NSObject {
     
@@ -17,6 +18,10 @@
 @property (assign) NSString *username;
 @property (assign) NSString *password;
 
+@property (assign) PGCconnection *conn;
+
 - (id) initWithDictionary:(NSDictionary *) data;
 - (NSDictionary *) serialize;
+
+
 @end
