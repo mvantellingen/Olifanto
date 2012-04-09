@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OLConnectionSource : NSObject <NSOutlineViewDelegate> {
+@interface OLConnectionOutlineController : NSObject <NSOutlineViewDelegate> {
     
     IBOutlet NSOutlineView * oview;
     

@@ -73,8 +73,6 @@
     NSError *error = nil;
     [cursor execute: statement error:&error]; 
     
-    NSLog(@"execute");
-    
     // Get the columns names
     NSMutableArray *columns = [NSMutableArray array];
     NSEnumerator *e = [cursor.fields objectEnumerator];
@@ -86,10 +84,7 @@
     OLQueryResult *result = [[OLQueryResult alloc] init];
     
     result.rows = [cursor fetchAll];
-    result.columns = columns;
-    NSLog(@"Rows: %@", result.rows);
-    NSLog(@"Columns: %@", result.columns);
-    
+    result.columns = columns;    
     return result;
 }
 

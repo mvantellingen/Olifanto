@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "OLConnectionSource.h"
+#import "OLConnectionOutlineController.h"
 #import "OLConnection.h"
 
 @interface OLConnectionController : NSViewController
@@ -19,7 +19,7 @@
     IBOutlet NSTextField *username;
     IBOutlet NSTextField *password;
 
-    IBOutlet OLConnectionSource *connectionSource;
+    IBOutlet OLConnectionOutlineController *connectionSource;
 
 }
 

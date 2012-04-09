@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "OLConnectionSource.h"
-#import "Models/OLSettings.h"
+#import "OLConnectionOutlineController.h"
+#import "OLSettings.h"
 
-@implementation OLConnectionSource
+@implementation OLConnectionOutlineController
 
 @synthesize delegate;
 

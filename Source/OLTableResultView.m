@@ -41,6 +41,7 @@
 
 - (int) numberOfRowsInTableView:(NSTableView *)theTableView
 {
+    NSLog(@"Showing %lu rows in tableview", [queryResult.rows count]);
     return [queryResult.rows count];
 }
 

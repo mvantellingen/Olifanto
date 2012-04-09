@@ -37,6 +37,12 @@
     
     NSLog(@"Set connection");
     [customQuery setConnection:connection];
+    [contentsController setConnection:connection];
+}
+
+- (void) selectTable:(NSString *)tableName
+{
+    [contentsController selectTable: tableName];
 }
 
 - (NSArray *)getDatabases
