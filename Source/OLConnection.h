@@ -22,6 +22,10 @@
 
 - (id) initWithDictionary:(NSDictionary *) data;
 - (NSDictionary *) serialize;
+- (NSArray *) getDatabases;
+- (NSArray *) getTables;
+- (BOOL) selectDatabase: (NSString *)database;
+- (PGCconnection *) _connectWithDatabase:(NSString *)theDatabase;
 
 
 @end

@@ -64,7 +64,7 @@
         NSAlert *alert = [[NSAlert alloc] init];
         [alert setMessageText:@"No host entered"];
         [alert runModal];
-        return;
+        return nil;
     }
     
     OLConnection *connection = [[OLConnection alloc] init];    

@@ -16,31 +16,26 @@
     [databaseSelector setEnabled:false];
 }
 
-- (void) test
-{
-    NSLog(@"YES I WORK YES");   
-}
-
 - (id)delegate 
 {
     return self.delegate;
 }
 
-- (void) setDelegate:(id)newValue
+- (void) setDbController:(id)newValue
 {
-    delegate = newValue;
+    dbController = newValue;
     
-    [databaseSelector setEnabled:(delegate != nil)];
+    [databaseSelector setEnabled:(dbController != nil)];
     [toolBar validateVisibleItems];
     
-    if (delegate) {
+    if (dbController) {
         [self refreshDatabases];
     }
 }
 
 - (void) refreshDatabases
 {
-    NSArray *databases = [delegate getDatabases];
+    NSArray *databases = [dbController getDatabases];
 
     [databaseSelector removeAllItems];
     
@@ -60,8 +55,12 @@
 
 - (IBAction) openQueryView:(id)sender
 {
-    NSLog(@"Open query view");
-    [self.delegate openQueryview];
+    [dbController openQueryView];
+}
+
+- (IBAction) openContentView:(id)sender
+{
+    [dbController openContentView];
 }
 
 
@@ -70,14 +69,18 @@
     NSString *database = [sender titleOfSelectedItem];
     
     if ([sender selectedTag] == 1) {
-        [delegate openDatabase: database];
+        [dbController openDatabase: database];
         [sender setTitle: database];
+        currentDatabase = database;
     }
-    
+    else {
+        currentDatabase = nil;
+    }
+    [toolBar validateVisibleItems];
 }
 
 - (BOOL)validateToolbarItem:(NSToolbarItem *)toolbarItem
 {
-    return (delegate != nil);
+    return (currentDatabase != nil);
 }
 @end

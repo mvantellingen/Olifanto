@@ -13,9 +13,17 @@
 @interface OLDatabaseController : NSViewController
 {
     OLConnection *connection;
+    NSString *currentDatabase;
     IBOutlet OLTableOutlineView *tablesView;
+    IBOutlet NSTabView *tabView;
 }
 - (void) awakeFromNib;
+
+- (void) openQueryView;
+- (void) openContentView;
+- (BOOL) openDatabase:(NSString *)database;
+- (void) setConnection:(OLConnection *)newConnection;
+
 
 @property (nonatomic, assign) id delegate;
 

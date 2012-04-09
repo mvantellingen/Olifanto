@@ -47,9 +47,19 @@
 
 - (BOOL) openDatabase:(NSString *)database
 {
-    NSArray *tables;
+    currentDatabase = database;
     [connection selectDatabase: database];
     [tablesView update];
     return true;
+}
+
+- (void) openQueryView
+{
+    [tabView selectTabViewItemWithIdentifier:@"query"];
+}
+
+- (void) openContentView
+{
+    [tabView selectTabViewItemWithIdentifier:@"content"];    
 }
 @end

@@ -26,6 +26,9 @@
 @property (nonatomic, assign) id delegate;
 
 
+- (void)selectConnection:(OLConnection *)connection;
+- (void)activateConnection:(OLConnection *)connection ;
+
 - (IBAction)save:(id)sender;
 - (IBAction)connect:(id)sender;
 
