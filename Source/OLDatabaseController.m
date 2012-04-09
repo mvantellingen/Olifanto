@@ -27,12 +27,16 @@
 - (void) awakeFromNib
 {
     [tablesView setDelegate:self];
+    NSLog(@"Awak from nib: %@", customQuery);
 }
 
 - (void) setConnection:(OLConnection *)newConnection
 {
     connection = newConnection;
     [connection connect];
+    
+    NSLog(@"Set connection");
+    [customQuery setConnection:connection];
 }
 
 - (NSArray *)getDatabases

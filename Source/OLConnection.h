@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <PGCconnection.h>
+#import "OLQueryResult.h"
 
 @interface OLConnection : NSObject {
     
@@ -26,6 +27,6 @@
 - (NSArray *) getTables;
 - (BOOL) selectDatabase: (NSString *)database;
 - (PGCconnection *) _connectWithDatabase:(NSString *)theDatabase;
-
+- (OLQueryResult *) executeQuery:(NSString *)statement;
 
 @end

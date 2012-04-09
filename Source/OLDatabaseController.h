@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "OLConnection.h"
 #import "OLTableOutlineView.h"
+#import "OLCustomQuery.h"
+
 
 @interface OLDatabaseController : NSViewController
 {
@@ -16,6 +18,7 @@
     NSString *currentDatabase;
     IBOutlet OLTableOutlineView *tablesView;
     IBOutlet NSTabView *tabView;
+    IBOutlet OLCustomQuery *customQuery;
 }
 - (void) awakeFromNib;
 

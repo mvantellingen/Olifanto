@@ -9,6 +9,9 @@
 #import "OLConnection.h"
 #import <PGCconnection.h>
 #import <PGCcursor.h>
+#import <PGCdescription.h>
+#import "OLQueryResult.h"
+
 
 @implementation OLConnection
 
@@ -63,6 +66,40 @@
     
     return true;
 }
+
+- (OLQueryResult *) executeQuery:(NSString *)statement
+{
+    PGCcursor *cursor = [conn cursor];
+    NSError *error = nil;
+    [cursor execute: statement error:&error]; 
+    
+    NSLog(@"execute");
+    
+    // Get the columns names
+    NSMutableArray *columns = [NSMutableArray array];
+    NSEnumerator *e = [cursor.fields objectEnumerator];
+    PGCdescription *field;
+    while (field = [e nextObject]) {
+        [columns addObject: field.name];
+    }
+    
+    OLQueryResult *result = [[OLQueryResult alloc] init];
+    
+    result.rows = [cursor fetchAll];
+    result.columns = columns;
+    NSLog(@"Rows: %@", result.rows);
+    NSLog(@"Columns: %@", result.columns);
+    
+    return result;
+}
+
+
+- (OLQueryResult *) executeQuery:(NSString *)statement withParams:(NSArray *)params
+{
+    NSLog(@"With params");
+}
+
+
 
 - (NSArray *) getTables
 {

@@ -25,6 +25,9 @@
 		E82DE6FD1530E86400C759DA /* DatabaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6F81530E86400C759DA /* DatabaseView.xib */; };
 		E82DE7001530E86400C759DA /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE6FB1530E86400C759DA /* Preferences.xib */; };
 		E82DE7021530E8D300C759DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82DE7011530E8D300C759DA /* MainMenu.xib */; };
+		E833EE3A153315550015521A /* OLCustomQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E833EE39153315540015521A /* OLCustomQuery.m */; };
+		E833EE3D1533206A0015521A /* OLQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E833EE3C1533206A0015521A /* OLQueryResult.m */; };
+		E833EE4015333D930015521A /* OLTableResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = E833EE3F15333D930015521A /* OLTableResultView.m */; };
 		E88C6E9C15322BC0003D9E05 /* OLTableOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */; };
 		E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B5B2171530EAEB00C14A87 /* MainWindow.xib */; };
 		E8C2CFA015317A45000DEDE8 /* OLConnectionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C2CF9F15317A45000DEDE8 /* OLConnectionSource.m */; };
@@ -122,6 +125,12 @@
 		E82DE6F81530E86400C759DA /* DatabaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatabaseView.xib; sourceTree = "<group>"; };
 		E82DE6FB1530E86400C759DA /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		E82DE7011530E8D300C759DA /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		E833EE38153315540015521A /* OLCustomQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLCustomQuery.h; sourceTree = "<group>"; };
+		E833EE39153315540015521A /* OLCustomQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLCustomQuery.m; sourceTree = "<group>"; };
+		E833EE3B1533206A0015521A /* OLQueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLQueryResult.h; sourceTree = "<group>"; };
+		E833EE3C1533206A0015521A /* OLQueryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLQueryResult.m; sourceTree = "<group>"; };
+		E833EE3E15333D920015521A /* OLTableResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTableResultView.h; sourceTree = "<group>"; };
+		E833EE3F15333D930015521A /* OLTableResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTableResultView.m; sourceTree = "<group>"; };
 		E88C6E9A15322BBF003D9E05 /* OLTableOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTableOutlineView.h; sourceTree = "<group>"; };
 		E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTableOutlineView.m; sourceTree = "<group>"; };
 		E8B5B2171530EAEB00C14A87 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "../../Olifant-old/Resources/MainWindow.xib"; sourceTree = "<group>"; };
@@ -290,6 +299,12 @@
 				E8C2CFC91531BE10000DEDE8 /* OLToolbarController.m */,
 				E88C6E9A15322BBF003D9E05 /* OLTableOutlineView.h */,
 				E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */,
+				E833EE38153315540015521A /* OLCustomQuery.h */,
+				E833EE39153315540015521A /* OLCustomQuery.m */,
+				E833EE3B1533206A0015521A /* OLQueryResult.h */,
+				E833EE3C1533206A0015521A /* OLQueryResult.m */,
+				E833EE3E15333D920015521A /* OLTableResultView.h */,
+				E833EE3F15333D930015521A /* OLTableResultView.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -464,6 +479,9 @@
 				E8C2CFC615319D96000DEDE8 /* OLConnection.m in Sources */,
 				E8C2CFCA1531BE11000DEDE8 /* OLToolbarController.m in Sources */,
 				E88C6E9C15322BC0003D9E05 /* OLTableOutlineView.m in Sources */,
+				E833EE3A153315550015521A /* OLCustomQuery.m in Sources */,
+				E833EE3D1533206A0015521A /* OLQueryResult.m in Sources */,
+				E833EE4015333D930015521A /* OLTableResultView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

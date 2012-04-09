@@ -114,15 +114,19 @@
     OLDatabaseController * dbController = 
         [[OLDatabaseController alloc]
          initWithNibName:@"DatabaseView" bundle:nil];    
-    [dbController setConnection: connection];
     
     [tabItem setLabel: [connection name]];
     [tabItem setView:[dbController view]];
     [tabItem setIdentifier:dbController];
+    
+    [dbController setConnection: connection];
     [toolbarController setDbController:dbController];
 
     // Deallocate the old view (connectionView)
     [tabItemView dealloc];
+    
+    
+    
 }
 
 @end
