@@ -1,11 +1,3 @@
-//
-//  PGWindowController.m
-//  PGview
-//
-//  Created by Michael van Tellingen on 11/9/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "OLWindowController.h"
 #import "OLMainController.h"
 #import "OLConnectionController.h"
