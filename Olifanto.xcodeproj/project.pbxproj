@@ -37,7 +37,7 @@
 		E8C2CFB31531860A000DEDE8 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */; };
 		E8C2CFC71531AFAD000DEDE8 /* PGCkit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E8B5B3191530F33600C14A87 /* PGCkit.framework */; };
 		E8C2CFCA1531BE11000DEDE8 /* OLToolbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C2CFC91531BE10000DEDE8 /* OLToolbarController.m */; };
-		E8E65F721530F67B004F65F9 /* PGCkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B3191530F33600C14A87 /* PGCkit.framework */; };
+		E8E65F721530F67B004F65F9 /* PGCkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B3191530F33600C14A87 /* PGCkit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E8E680C81530E5E0007A7F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E680C31530E5E0007A7F6B /* main.m */; };
 		E8E680C91530E5E0007A7F6B /* OLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E680C51530E5E0007A7F6B /* OLAppDelegate.m */; };
 /* End PBXBuildFile section */
@@ -49,6 +49,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = E81EA2C71530E48F00214734;
 			remoteInfo = Olifanto;
+		};
+		E842CF131534863D0010312F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E8079A031472D5BB00A27C5B;
+			remoteInfo = PGCkit;
+		};
+		E842CF15153486400010312F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
 		};
 		E8B5B30C1530F32E00C14A87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -83,7 +97,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		E8C2CFB1153185A3000DEDE8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -337,6 +351,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				E842CF16153486400010312F /* PBXTargetDependency */,
+				E842CF141534863D0010312F /* PBXTargetDependency */,
 			);
 			name = Olifanto;
 			productName = Olifanto;
@@ -514,6 +530,16 @@
 			target = E81EA2C71530E48F00214734 /* Olifanto */;
 			targetProxy = E81EA2ED1530E48F00214734 /* PBXContainerItemProxy */;
 		};
+		E842CF141534863D0010312F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PGCkit;
+			targetProxy = E842CF131534863D0010312F /* PBXContainerItemProxy */;
+		};
+		E842CF16153486400010312F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PSMTabBarControlFramework;
+			targetProxy = E842CF15153486400010312F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -543,7 +569,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "Frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = "@loader_path/../Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -574,7 +600,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "Frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = "@loader_path/../Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = supported;
@@ -592,7 +618,7 @@
 		E81EA2FB1530E49000214734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "@loader_path/../Frameworks/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
@@ -609,7 +635,7 @@
 		E81EA2FC1530E49000214734 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "@loader_path/../Frameworks/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
