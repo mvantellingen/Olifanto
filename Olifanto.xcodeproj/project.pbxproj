@@ -34,7 +34,7 @@
 		E842CF1C1535F1010010312F /* OLTableContentsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = E842CF1B1535F1010010312F /* OLTableContentsDatasource.m */; };
 		E842CF1F1535F3050010312F /* OLQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E842CF1E1535F3050010312F /* OLQueryBuilder.m */; };
 		E88C6E9C15322BC0003D9E05 /* OLTableOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */; };
-		E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B5B2171530EAEB00C14A87 /* MainWindow.xib */; };
+		E8B89F2F153AE4C100AD1EBD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B89F2E153AE4C100AD1EBD /* MainWindow.xib */; };
 		E8C2CFA015317A45000DEDE8 /* OLConnectionOutlineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C2CF9F15317A45000DEDE8 /* OLConnectionOutlineController.m */; };
 		E8C2CFB2153185B9000DEDE8 /* PSMTabBarControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */; };
 		E8C2CFB31531860A000DEDE8 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B5B30D1530F32E00C14A87 /* PSMTabBarControl.framework */; };
@@ -160,9 +160,9 @@
 		E842CF1E1535F3050010312F /* OLQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLQueryBuilder.m; path = Connection/OLQueryBuilder.m; sourceTree = "<group>"; };
 		E88C6E9A15322BBF003D9E05 /* OLTableOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTableOutlineView.h; sourceTree = "<group>"; };
 		E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTableOutlineView.m; sourceTree = "<group>"; };
-		E8B5B2171530EAEB00C14A87 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "../../Olifant-old/Resources/MainWindow.xib"; sourceTree = "<group>"; };
 		E8B5B3021530F32E00C14A87 /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = External/PSMTabBarControl/Source/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
 		E8B5B3101530F33500C14A87 /* PGCkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PGCkit.xcodeproj; path = External/PGCkit/PGCkit.xcodeproj; sourceTree = "<group>"; };
+		E8B89F2E153AE4C100AD1EBD /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		E8C2CF9E15317A45000DEDE8 /* OLConnectionOutlineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLConnectionOutlineController.h; sourceTree = "<group>"; };
 		E8C2CF9F15317A45000DEDE8 /* OLConnectionOutlineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLConnectionOutlineController.m; sourceTree = "<group>"; };
 		E8C2CFC81531BE10000DEDE8 /* OLToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLToolbarController.h; sourceTree = "<group>"; };
@@ -249,9 +249,9 @@
 		E82DE6F61530E86400C759DA /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				E8B89F2E153AE4C100AD1EBD /* MainWindow.xib */,
 				E82DE7011530E8D300C759DA /* MainMenu.xib */,
 				E82DE6F71530E86400C759DA /* ConnectionView.xib */,
-				E8B5B2171530EAEB00C14A87 /* MainWindow.xib */,
 				E82DE6F81530E86400C759DA /* DatabaseView.xib */,
 				E82DE6FB1530E86400C759DA /* Preferences.xib */,
 				E842CF181535EDCF0010312F /* ContentPaginationView.xib */,
@@ -473,8 +473,8 @@
 				E82DE6FD1530E86400C759DA /* DatabaseView.xib in Resources */,
 				E82DE7001530E86400C759DA /* Preferences.xib in Resources */,
 				E82DE7021530E8D300C759DA /* MainMenu.xib in Resources */,
-				E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */,
 				E842CF191535EDCF0010312F /* ContentPaginationView.xib in Resources */,
+				E8B89F2F153AE4C100AD1EBD /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

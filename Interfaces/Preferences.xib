@@ -105,6 +105,7 @@
 							<int key="NSvFlags">12</int>
 							<string key="NSFrame">{{-8, -10}, {496, 282}}</string>
 							<reference key="NSSuperview" ref="1006"/>
+							<reference key="NSWindow"/>
 							<string key="NSReuseIdentifierKey">_NS:461</string>
 							<object class="NSMutableArray" key="NSTabViewItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
@@ -115,6 +116,7 @@
 										<int key="NSvFlags">256</int>
 										<string key="NSFrame">{{10, 7}, {476, 262}}</string>
 										<reference key="NSSuperview" ref="1028550219"/>
+										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="1028550219"/>
 										<string key="NSReuseIdentifierKey">_NS:463</string>
 									</object>
@@ -160,6 +162,7 @@
 					</object>
 					<string key="NSFrameSize">{480, 270}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
