@@ -61,6 +61,7 @@
 
 - (OLQueryResult *) executeQuery:(NSString *)statement
 {
+    NSLog(@"Statement: %@", statement);
     PGCcursor *cursor = [conn cursor];
     NSError *error = nil;
     [cursor execute: statement error:&error]; 
@@ -83,7 +84,25 @@
 
 - (OLQueryResult *) executeQuery:(NSString *)statement withParams:(NSArray *)params
 {
-    NSLog(@"With params");
+    NSLog(@"Statement: %@", statement);
+    PGCcursor *cursor = [conn cursor];
+    NSError *error = nil;
+    [cursor execute:statement withParams:params error:&error]; 
+    
+    // Get the columns names
+    NSMutableArray *columns = [NSMutableArray array];
+    NSEnumerator *e = [cursor.fields objectEnumerator];
+    PGCdescription *field;
+    while (field = [e nextObject]) {
+        [columns addObject: field.name];
+    }
+    
+    OLQueryResult *result = [[OLQueryResult alloc] init];
+    
+    result.rows = [cursor fetchAll];
+    result.columns = columns;    
+    return result;
+
 }
 
 

@@ -30,6 +30,9 @@
 		E833EE4A1533669E0015521A /* OLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E833EE471533669E0015521A /* OLConnection.m */; };
 		E833EE4B1533669E0015521A /* OLQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E833EE491533669E0015521A /* OLQueryResult.m */; };
 		E833EE4E153366DC0015521A /* OLSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E833EE4C153366DB0015521A /* OLSettings.m */; };
+		E842CF191535EDCF0010312F /* ContentPaginationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E842CF181535EDCF0010312F /* ContentPaginationView.xib */; };
+		E842CF1C1535F1010010312F /* OLTableContentsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = E842CF1B1535F1010010312F /* OLTableContentsDatasource.m */; };
+		E842CF1F1535F3050010312F /* OLQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E842CF1E1535F3050010312F /* OLQueryBuilder.m */; };
 		E88C6E9C15322BC0003D9E05 /* OLTableOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */; };
 		E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B5B2171530EAEB00C14A87 /* MainWindow.xib */; };
 		E8C2CFA015317A45000DEDE8 /* OLConnectionOutlineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C2CF9F15317A45000DEDE8 /* OLConnectionOutlineController.m */; };
@@ -150,6 +153,11 @@
 		E833EE491533669E0015521A /* OLQueryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLQueryResult.m; path = Connection/OLQueryResult.m; sourceTree = "<group>"; };
 		E833EE4C153366DB0015521A /* OLSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLSettings.m; sourceTree = "<group>"; };
 		E833EE4D153366DB0015521A /* OLSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLSettings.h; sourceTree = "<group>"; };
+		E842CF181535EDCF0010312F /* ContentPaginationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentPaginationView.xib; sourceTree = "<group>"; };
+		E842CF1A1535F1010010312F /* OLTableContentsDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLTableContentsDatasource.h; path = TableControllers/OLTableContentsDatasource.h; sourceTree = "<group>"; };
+		E842CF1B1535F1010010312F /* OLTableContentsDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLTableContentsDatasource.m; path = TableControllers/OLTableContentsDatasource.m; sourceTree = "<group>"; };
+		E842CF1D1535F3050010312F /* OLQueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLQueryBuilder.h; path = Connection/OLQueryBuilder.h; sourceTree = "<group>"; };
+		E842CF1E1535F3050010312F /* OLQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLQueryBuilder.m; path = Connection/OLQueryBuilder.m; sourceTree = "<group>"; };
 		E88C6E9A15322BBF003D9E05 /* OLTableOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLTableOutlineView.h; sourceTree = "<group>"; };
 		E88C6E9B15322BC0003D9E05 /* OLTableOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLTableOutlineView.m; sourceTree = "<group>"; };
 		E8B5B2171530EAEB00C14A87 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = "../../Olifant-old/Resources/MainWindow.xib"; sourceTree = "<group>"; };
@@ -246,6 +254,7 @@
 				E8B5B2171530EAEB00C14A87 /* MainWindow.xib */,
 				E82DE6F81530E86400C759DA /* DatabaseView.xib */,
 				E82DE6FB1530E86400C759DA /* Preferences.xib */,
+				E842CF181535EDCF0010312F /* ContentPaginationView.xib */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -255,6 +264,8 @@
 			children = (
 				E833EE4115334B0E0015521A /* OLTableContentsController.h */,
 				E833EE4215334B0E0015521A /* OLTableContentsController.m */,
+				E842CF1A1535F1010010312F /* OLTableContentsDatasource.h */,
+				E842CF1B1535F1010010312F /* OLTableContentsDatasource.m */,
 			);
 			name = TableControllers;
 			sourceTree = "<group>";
@@ -266,6 +277,8 @@
 				E833EE471533669E0015521A /* OLConnection.m */,
 				E833EE481533669E0015521A /* OLQueryResult.h */,
 				E833EE491533669E0015521A /* OLQueryResult.m */,
+				E842CF1D1535F3050010312F /* OLQueryBuilder.h */,
+				E842CF1E1535F3050010312F /* OLQueryBuilder.m */,
 			);
 			name = Connection;
 			sourceTree = "<group>";
@@ -461,6 +474,7 @@
 				E82DE7001530E86400C759DA /* Preferences.xib in Resources */,
 				E82DE7021530E8D300C759DA /* MainMenu.xib in Resources */,
 				E8B5B2181530EAEB00C14A87 /* MainWindow.xib in Resources */,
+				E842CF191535EDCF0010312F /* ContentPaginationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +526,8 @@
 				E833EE4A1533669E0015521A /* OLConnection.m in Sources */,
 				E833EE4B1533669E0015521A /* OLQueryResult.m in Sources */,
 				E833EE4E153366DC0015521A /* OLSettings.m in Sources */,
+				E842CF1C1535F1010010312F /* OLTableContentsDatasource.m in Sources */,
+				E842CF1F1535F3050010312F /* OLQueryBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
